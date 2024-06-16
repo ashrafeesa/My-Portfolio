@@ -51,7 +51,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(../images/ashraf.jpg) no-repeat;
+    background: url(images/ashraf.jpg) no-repeat;
     background-size: cover;
     background-position: canter;
     background-attachment: fixed;
@@ -204,6 +204,67 @@ section{
     font-size: 1.5em;
 }
 
+.soft-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    background: white;
+    margin: 0;
+}
+
+.circle-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.274);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    position: absolute;
+    width: 7em;
+    height: 7em;
+    background: rgb(0, 31, 29);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    font-size: 1.75em;
+    box-shadow: 0 5px 35px rgba(1 1 1 / 75%);
+}
+
+.item {
+    position: absolute;
+    width: 9em;
+    height: 9em;
+    background: rgb(1, 66, 63);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.84375em;
+    transform: rotate(calc(45deg * var(--i))) translate(185px) rotate(calc(-45deg * var(--i)));
+    transition: background 0.3s;
+}
+
+.item:hover {
+    background: rgb(0, 31, 29);
+}
+
+.cards-contact{
+    background-color: #d8c590;
+}
+
 .footer{
     background-color: #050507;
     color: #ffffff;
@@ -264,4 +325,3 @@ footer .social-icons  a{
     }
     
 }
-
